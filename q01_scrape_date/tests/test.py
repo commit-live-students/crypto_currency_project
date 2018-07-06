@@ -23,4 +23,4 @@ class TestRead_csv_data_to_df(TestCase):
         self.assertEqual(df.shape, (456, 7), "The Expected return shape does not match with the given return shape")
 
     def test_values(self):
-        self.assertEqual(df.iloc[3,2], 1044.4, "The Expected return value does not match with the given return value")
+        self.assertEqual(df.iloc[3,2], 1159.42, "The Expected return value does not match with the given return value")
