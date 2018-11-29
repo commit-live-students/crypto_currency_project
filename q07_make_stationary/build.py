@@ -8,8 +8,8 @@ df = pd.read_csv(path,sep='\t')
 df['Date'] = pd.to_datetime(df['Date'])
 df=df.set_index('Date')
 df = df.drop(['Unnamed: 0'],1)
-df.plot(['Close**'])
 
+plt.switch_backend('agg')
 
 def q07_make_stationary(path):
     df['lClose'] = np.log(df['Close**'])
